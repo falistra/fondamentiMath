@@ -1,0 +1,190 @@
+% $Header$
+
+\documentclass[8pt]{beamer}
+\geometry{paperwidth=160mm,paperheight=105mm}
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage{multimedia}
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\usepackage{graphicx}
+\graphicspath{{immagini/}}
+
+\usepackage{wrapfig}
+
+\title[Il Teorema Fondamentale del Calcolo] % (optional, use only with long paper titles)
+{Il Teorema Fondamentale del Calcolo}
+
+\subtitle
+{È davvero possibile che la strada più breve per la verità passi attraverso qualcosa di falso ?} % (optional)
+
+\author[F.~Zanasi, Matricola 48359] % (optional, use only with lots of authors)
+{F.~Zanasi\inst{1} }
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
+{
+  \inst{1}%
+  Corso di Laurea in Didattica e Comunicazione delle Scienze\\
+  Università di Modena e Reggio Emilia
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Short Occasion] % (optional)
+{26 Novembre 2021 / Corso di Fondamenti di Matematica}
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}<beamer>{Outline}
+%    \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Sommario}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\section{Introduzione}
+\subsection{Senza formule}
+\begin{frame}{Senza formule}
+  \begin{center}
+    \includegraphics[scale=.2]{Z-158.png}
+    \includegraphics[scale=.2]{Z-170.png}
+    \includegraphics[scale=.2]{Z-242.png}
+    \includegraphics[scale=.2]{Z-287.png}
+    \includegraphics[scale=.2]{Z-323.png}
+    \includegraphics[scale=.2]{Z-418.png}
+    \movie{\includegraphics[width=0.5\textwidth]{Z-510.png}}{Fundamental_theorem_of_calculus__animation_.avi}
+  \end{center}
+\end{frame}
+
+\subsection{Storia}
+\begin{frame}{Storia}
+  \begin{block}{Origine}
+    Il teorema nacque nel XVII secolo, quando si scoprì che i processi per determinare
+    \begin{itemize}
+      \item
+            la tangente a una curva.
+      \item
+            l'area racchiusa da una curva.
+    \end{itemize}
+    erano l'uno l'inverso dell'altro.
+  \end{block}
+
+  \pause
+  \begin{block}{Sviluppo}
+    Nelle prime formulazioni 
+    il teorema stabiliva che la differenziazione e l'integrazione di funzioni
+    rappresentano operazioni inverse.
+    In seguito la formulazione del teorema continuò a trasformarsi e parallelamente
+    si precisarono e ampliarono le nozioni di \textit{differenziazione}, \textit{integrazione} e \textit{funzione}.
+  \end{block}
+\end{frame}
+
+\subsection{Infinitesimi}
+\begin{frame}{Infinitesimi}
+  \begin{alertblock}{Infinitesimi}
+    Una delle caratteristiche piú salienti della storia di questo teorema è il ruolo problematico
+    e in qualche modo irritante delle grandezze infinitesimali, un concetto che sembrò per lungo tempo
+    assurdo, per quanto indispensabile.
+  \end{alertblock}
+  \pause
+  \begin{block}{Definizione}
+    \alert{Infinitesimo} in Matematica, si dice di quantità variabile che,
+    in opportune condizioni, ha per limite lo zero.
+    La definizione del concetto di i. è dovuta ad A.-L. Cauchy (1821).
+    Secondo tale definizione,
+    l’i. non va inteso in senso di i. attuale (quantità infinitamente piccola,
+    evanescente, e tuttavia diversa dallo zero),
+    ma nel senso di i. potenziale (quantità che tende ad annullarsi).
+  \end{block}
+
+  \pause
+  \begin{block}{Ex malo, bonum}
+    La ricerca di una soluzione al problema degli infinitesimi condusse non solo a chiarire il concetto
+    di funzione, ma anche a precisare il concetto di \textit{numero}.
+  \end{block}
+
+  \pause
+  \begin{block}{Importanza}
+    Il teorema fondamentale del Calcolo, \alert{(TFC)} fu dunque all'origine
+    della revisione della matematica, e ciò ne fa uno dei teoremi piú importanti
+    della sua storia.
+  \end{block}
+
+\end{frame}
+
+\section{Il teorema del moto}
+\subsection{Oresme}
+\include{Oresme}
+\subsection{Torricelli}
+\include{Torricelli}
+
+\section{Tangenti e aree}
+\subsection{Cartesio}
+\include{Cartesio}
+\subsection{Fermat}
+\include{Fermat}
+\subsection{Cavalieri}
+\include{Cavalieri-Torricelli}
+
+\section{Prime versioni del TFC}
+\subsection{Newton}
+\include{Newton}
+\subsection{Leibniz}
+\include{Leibniz}
+
+
+\include{biblio}
+
+\end{document}
