@@ -1,0 +1,25 @@
+\begin{frame}[label=Fermat-metodo]
+    \frametitle{Il metodo che non sbaglia mai}
+    \begin{block}{L'``\textit{adeguagliazione}''}
+        Fermat, nel trattato \textit{Methodus ad disquirendam maximam et minimam} (1636) scrive:
+        ``\textit{L'intera dottrina della determinazione dei massimi e minimi è
+        fondata su due espressioni simboliche e su questa sola regola:}''
+        \begin{itemize}
+        \item<1-> La prima espressione contiene il termine da massimizzare : sia $a$.
+        \item<2-> La seconda espressione si ottenga sostituendo $a+e$ al posto di $a$.
+        \item<3-> Si ``\alert{adeguaglino}''[adaequentur] le due espressioni.
+        \item<4-> Dopo aver tolto i termini comuni, si divida per $e$
+        \item<5-> Si eliminino le quantità contenenti $e$, e si eguaglino [aequatur] i termini restanti
+        \item<6-> La soluzione di quest'ultima equazione da il valore di $a$.
+        \end{itemize}
+    Per esempio: dividere un segmento di lunghezza $b$ in due segmenti che siano base e altezza 
+    di un rettangolo di area massima.\\
+    \alert{1} Sia $a$ il primo segmento. Il secondo sarà $b-a$. Si tratta di massimizzare l'espressione $a(b-a)$ (1).\\
+    \alert{2} Si prenda ora $a+e$ e la si sostituisca al posto di $a$ nell'espressione da massimizzare, ottenendo
+    l'espressione $((a+e)(b-(a+e))) = ba - a^2 +be -2ae -e^2$ (2).\\
+    \alert{3} Si ``\alert{adeguaglino}'' l'espressione (1) e la (2) ottenendo un'``\alert{adequazione}'' ($\approx$).\\
+    \alert{4} Semplificando e dividendo per $e$ si ottiene $b \approx 2a + e$\\ 
+    \alert{5} Eliminando i termini che contengono $e$ resta $b = 2a$\\ 
+    \alert{6} $a$ è la metà di $b$, quindi i due segmenti sono uguali. Il rettangolo che massimizza l'area è un quadrato.    
+    \end{block}
+\end{frame}
