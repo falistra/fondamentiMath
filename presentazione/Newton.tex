@@ -3,32 +3,70 @@
 
   \begin{block}{De methodis serierum et fluxionum. 1670-1672}
     \textit{Per illustrare l'arte analitica non rimane ora che affrontare alcuni problemi
-    ad essa inerenti che emergono soprattutto a causa della natura delle curve [...]
-    tali difficoltà possono essere ricondotte a due soli problemi, che vorrei presentare 
-    in relazione allo spazio percorso con un qualsiasi moto locale, sia esso accelerato
-    o ritardato:}
-  
+      ad essa inerenti che emergono soprattutto a causa della natura delle curve [...]
+      tali difficoltà possono essere ricondotte a due soli problemi, che vorrei presentare
+      in relazione allo spazio percorso con un qualsiasi moto locale, sia esso accelerato
+      o ritardato:}
+
     \begin{itemize}
       \item
-      \textit{Data la lunghezza della traiettoria in maniera continua (cioè, in ogni istante),
-        trovare la velocità del moto in ogni istante.}
+            \textit{Data la lunghezza della traiettoria in maniera continua (cioè, in ogni istante),
+              trovare la velocità del moto in ogni istante.}
       \item
-      \textit{Data la velocità del moto in maniera continua, trovare la lunghezza della traiettoria
-        descritta (cioè della distanza percorsa) in ogni istante.}
-      \end{itemize}
+            \textit{Data la velocità del moto in maniera continua, trovare la lunghezza della traiettoria
+              descritta (cioè della distanza percorsa) in ogni istante.}
+    \end{itemize}
+
+    Ogni quantità è variabile \alert{fluente} rispetto al tempo. Due variabili $x$ e $y$ sono correlate 
+    dall'equazione data $P(x,y)=0$ che determina la curva. 
+    Newton introduce due nuove grandezze $\dot{x}$ e $\dot{y}$, che sono le velocità istantanee
+    o \alert{flussioni}; i loro rapporti determinano la tangente / velocità alla curva e si possono ricavare operando
+    \alert{secondo opportune regole} su $P(x,y)$.
   \end{block}
+  \begin{exampleblock}{Calcolo delle flussioni : la regola del prodotto}
+    Per trovare la velocità del prodotto, Newton considera un tempuscolo (Infinitesimo) $o$, dopo il quale $x$ e $y$ saranno diventate 
+    rispettivamente $x+o\dot{x}$ e $y+o\dot{y}$. Allora la velocità sarà
+    \begin{center}
+      $\frac{(x+o\dot{x})(y+o\dot{y}) - xy}{o} = \frac{o(\dot{x}y + x\dot{y}) + o^2\dot{x}\dot{y}}{o} = \dot{x}y + x\dot{y} + o\dot{x}\dot{y}$
+    \end{center}
+    e, dato che l'ultimo termine $o\dot{x}\dot{y}$ è un infinitesimo per via di $o$, resta che la velocità del prodotto,
+    denotata con $\dot{xy}$, è:
+    \begin{center}
+        $\dot{xy} = \dot{x}y + x\dot{y}$
+    \end{center}
+
+  \end{exampleblock}
+
+
+
 
 \end{frame}
 
 \begin{frame}[label=Newton teorema]
-    \begin{block}{TFC secondo Newton}
-      Per ogni serie di potenze, l'operazione di differenziazione è 
-      inversa all'operazione di integrazione. Assumendo che sia sempre possibile
-      differenziare e integrare termine a termine.
-    \end{block}
-    \pause
-    Questo teorema è una conseguenza diretta del fatto che la differenziazione è
-    l'operazione inversa dell'integrazione per ogni potenza $x^n$. Tuttavia occorre
+
+  \begin{block}{Estensione del metodo}
+    Nel \textit{De methodis} Newton estende la soluzione, nota a Torricelli e Barrow per la
+    classe delle curve $y = x^n$, alla più ampia classe delle \textit{serie infinite di potenze}.
+    Newton è in grado di ottenere gli sviluppi in serie di tutte le quantità variabili (modenamente ``funzioni'').
+    Ecco come risorlve il problema della quadratura, riducendolo esenzialmente all'integrazione delle potenze.
+
+    \textit{
+      \begin{enumerate}
+        \item Se $x^{\frac{m}{n}}$ sono le ordinate alzate ad algolo retto, allora l'area della figura 
+        sarà $\frac{n}{n+m}x^{frac{m+n}{n}}$
+        \item Se l'ordinata è costituita da due o più ordinate unite dai segni $+$ e $-$, anche l'area 
+        sarà allora costituita da due o più aree congiunte insieme rispettivaemnte dai segni $+$ e $-$.
+        \item Ridurre le frazioni, i radicali, le radici affette da esponente in serie convergenti, quando
+        non è possibile trovare altrimenti la quadratura; e nel quadrare, secondo le regole prima e seconda, le 
+        figure le cui ordinate sono i singoli termini della serie.       
+      \end{enumerate}
+    }
+  \end{block}
+
+  \begin{block}{TFC secondo Newton}
+    Per ogni serie di potenze, l'operazione di differenziazione è
+    inversa all'operazione di integrazione. Tuttavia occorre
     avere una serie di potenze in forma esplicita.
-  
+  \end{block}
+
 \end{frame}
