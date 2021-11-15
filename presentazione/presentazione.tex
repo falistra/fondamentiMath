@@ -34,7 +34,7 @@
 {Il Teorema Fondamentale del Calcolo}
 
 \subtitle
-{È davvero possibile che la strada più breve per la verità passi attraverso qualcosa di falso ?} % (optional)
+{È davvero possibile che la strada più breve per la verità passi attraverso qualcosa di falso ? \cite{Stillwell}} % (optional)
 
 \author[F.~Zanasi, Matricola 48359] % (optional, use only with lots of authors)
 {F.~Zanasi\inst{1} }
@@ -83,6 +83,8 @@
 
 %\beamerdefaultoverlayspecification{<+->}
 
+\setbeamertemplate{bibliography item}[text]
+
 \begin{document}
 
 \begin{frame}
@@ -116,15 +118,20 @@
       \item
             la tangente a una curva.
       \item
-            l'area racchiusa da una curva.
+            l'area (\textit{quadratura}) racchiusa da una curva.
     \end{itemize}
     erano l'uno l'inverso dell'altro.
   \end{block}
 
+  \begin{block}{Spazio, velocità, tempo}
+    L'altra origine del teorema fu lo studio della cinematica dei corpi solidi,
+    quando si scoprì che nella curva velocità-tempo lo spazio percorso era (pari al)l'area,
+    mentre nella curva spazio-tempo, la velocità era la tangente. 
+  \end{block}
+
   \pause
   \begin{block}{Sviluppi successivi}
-    Nelle prime formulazioni 
-    il teorema stabiliva che la differenziazione e l'integrazione di funzioni
+    Nelle prime formulazioni il teorema stabiliva che la differenziazione e l'integrazione di funzioni
     rappresentano operazioni inverse.
     In seguito la formulazione del teorema continuò a trasformarsi e parallelamente
     si precisarono e ampliarono le nozioni di \textit{differenziazione}, \textit{integrazione} e \textit{funzione}.
@@ -185,7 +192,14 @@
 \subsection{Leibniz}
 \include{Leibniz}
 
+\begin{frame}[allowframebreaks] %allow to expand references to multiple frames (slides)
 
-\include{biblio}
+  \frametitle{Riferimenti bibliografici}
+  
+  \scriptsize{\bibliographystyle{plain}}
+  
+  \bibliography{refs} %bibtex file name without .bib extension
+  
+\end{frame}
 
 \end{document}
