@@ -4,13 +4,13 @@
     Nel 1854 Riemann presentò una esempio di funzione che ha discontinuità in ogni intervallo ma rimane comunque integrabile secondo Cauchy.
     L'esempio più semplice di funzione con queste caratteristiche è:    
 
-    \begin{equation}
+    \begin{equation*}
       d(x) =
       \begin{cases*}
         \frac{1}{q} & se x = $\frac{p}{q}$ dove $\frac{p}{q}$ è ridotta ai minimi termini \\
         0 & se è irrazionale
       \end{cases*}
-    \end{equation}
+    \end{equation*}
 
     Calcoliamo l'integrale. Per ogni $q \in \mathbb{N}$ :
     \begin{itemize}
@@ -22,9 +22,35 @@
 
     Sommando i due contributi, l'area totale $< \frac{2}{q}$ per ogni $q \in \mathbb{N}$ quando l'ampiezza dei sottointervalli tende a zero. Quindi
     \begin{center}
-      $\int_{0}^{1} f(x) \,dx = 0$
+      $\int_{0}^{1} d(x) \,dx = 0$
     \end{center}
     \end{block}    
 \end{frame}
 
+\begin{frame}[label=L'integrale di Riemann]
+  \frametitle{L'integrale di Riemann}
+  \begin{block}{L'integrale di Riemann}    
+    Dato un intervallo $[a,b]$ , \textit{suddivisione} è ogni \textit{sottoinsieme finito} $\sigma$ di $[a,b]$ che contiene gli estremi $a$ e $b$. \\
 
+    Data una funzione $f : [a,b] \rightarrow \mathbb{R}$ \textit{limitata} e $ \mathcal{D} = \left\{x_0,...,x_n\right\} $ una suddivisione di $[a,b]$,\\
+    chiamiamo rispettivamente \textit{somma inferiore} $s(\mathcal{D},f)$ e \textit{somma superiore} $S(\mathcal{D},f)$ di Riemann :
+    \begin{center}
+      \[s(\mathcal{D},f) = \sum_{k = 1}^n (x_k-x_{k-1})\inf_{(x_{k-1},x_k)} f\]
+      \[S(\mathcal{D},f) = \sum_{k = 1}^n (x_k-x_{k-1})\sup_{(x_{k-1},x_k)} f\]
+    \end{center}
+
+    Una funzione $f : [a,b] \rightarrow \mathbb{R}$ \textit{limitata} è integrabile secondo Riemann se è unico il numero reale $I$ compreso 
+    fra \textit{tutte} le somme inferiori di $f$ e tutte le somme superiori di $f$. Se $f$ è integrabile secondo Riemann, l'unico numero $I$ 
+    nelle condizioni dette è chiamato integrale di Riemann di $f$
+
+    \begin{center}
+      \[ I := \int_{(a,b)} f(x) \,dx := \sup_\mathcal{D} s(\mathcal{D},f)  =  \inf_\mathcal{D} S(\mathcal{D},f) \]
+    \end{center}
+
+
+    \end{block}    
+
+
+
+
+\end{frame}
