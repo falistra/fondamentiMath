@@ -1,0 +1,50 @@
+\begin{frame}[label=Proprietà della continuità]
+  \frametitle{Proprietà della continuità}
+  \begin{block}{Come ci si può sbarazzare degli infinitesimi?}    
+    Berkeley nel suo trattato \textit{The Analyst}, pubblicato nel 1734 scrive:
+    \begin{quotation}
+      Essi non sono nè quantità finite, nè quantità infinitamente piccole e neppure nulla. Non dobbiamo forse
+      chiamarli i fantasmi di quantità defunte?
+    \end{quotation}
+    Questa critica pungeva i matematici nel vivo, ma dovette passare molto tempo prima che potessero trovare
+    una risposta soddisfacente (coerente). E quando la trovarono, la risposta era molto complicata.
+        \end{block}    
+  \begin{block}{Il problema della continuità}
+          Cauchy aveva definito l'integrale come limite di una somma, e dimostrato che esiste per ogni funzione continua.
+          Ma la continuità ha una proprietà, detta del \textit{valore intermedio}, indimostrata: 
+          \textit{se una funzione f è continua nell'intervallo [a,b],
+          se f(a) < 0 e f(b) > 0 allora esiste un x in cui f si annulla}.
+          Questo è però chiaramente falso in $\mathbb{Q}$, se $f(x) = x^2 -2$ nell'intervallo [0,2]: non si annulla mai in  
+          $\mathbb{Q}$ dato che le sue soluzioni $\pm\sqrt{2}$ non sono razionali.
+  \end{block}
+  \begin{block}{La proprietà di completezza}
+          I tentativi di dimostrare la proprietà del valore intermedio dipendeva a sua volta da una proprietà indimostrata di $\mathbb{R}$,
+          la proprietà dell' estremo superiore: \textit{ogni insieme limitato di numeri reali ha estremo superiore}.
+  \end{block}
+\end{frame}
+
+\begin{frame}[label=Dedekind]
+  \frametitle{Dedekind}
+  \begin{block}{La costruzione di $\mathbb{R}$ a partire da $\mathbb{Q}$  }
+    Nel 1858, Dedekind si rese conto che i problemi relativi alla fondazione dell'Analisi potevano essere risolti
+    solo con una \textit{precisa definizione di numero Reale}.\\
+    Dato l'insieme dei razionali $\mathbb{Q}$, un numero irrazionale è un \say{taglio} (o \say{sezione}) in esso.
+    Costruire una sezione significa separare $\mathbb{Q}$ in due insiemi $\mathsf{I}$ ed $\mathsf{S}$ in modo tale che 
+    ogni elemento di $\mathsf{I}$ sia minore di ogni elemento di $\mathsf{S}$. Se $\mathsf{I}$ non ha un massimo e 
+    $\mathsf{S}$ non ha un minimo, allora la sezione ($\mathsf{I}$,$\mathsf{S}$) è un numero irrazionale.\\
+    Per esempio, l'insieme dei numeri razionali positivi $\{r : r^2 > 2\}$ costituiscono l'insieme $\mathsf{S}$,
+    $\{r : r^2 > 2\}$ è l'insieme $\mathsf{S}$, la coppia ($\mathsf{I}$,$\mathsf{S}$) corrisponde al numero reale $\sqrt{2}$.
+  \end{block}
+  \begin{block}{L'aritmetizzazione dell'Analisi}
+    Dedekind pubbicò nel 1872 \textit{Stetigkeit und irrationale Zahlen} (Continuità e numeri irrazionali). Altri matematici proposero
+    definizioni equivalenti. Essi portarono avanti quella che fu chiamata l'\say{aritmetizzazione dell'Analisi}, ovvero la ricostruzione
+    dei fondamenti del calcolo sul concetto aritmetico di numero reale e sull'uso rigoroso del concetto di limite. 
+  \end{block}
+
+  \begin{block}{La forza della tradizione nella notazione}
+    Tuttavia i matematici non abbandonarono l'uso dei simboli $dx$ e $dy$, che rappresentavano (p.e. in Leibniz) gli infinitesimi, 
+    ma dissero che l'espressione $\frac{dy}{dx}$ ha senso (limite di $\frac{\Delta y}{\Delta x}$), anche se $dx$ e $dy$
+    presi singolarmente non hanno significato. 
+  \end{block}
+
+\end{frame}
