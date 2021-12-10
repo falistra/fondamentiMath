@@ -1,6 +1,70 @@
 \begin{frame}[label=Robinson]
   \frametitle{Robinson}
   \begin{block}{Quanto è comodo l'infinitesimo}
-    L'infinitesimo è tanto assurdo quanto comodo.
-  \end{block}
+    Negli anni 60 del secolo XX, A.Robinson ri-propone la nozione di infinitesimo: un numero che è infinitamente piccolo
+    e tuttavia maggiore di zero. Fermat prima e poi Newton e Leibniz lo avevano usato con estrema disinvoltura, benchè palesemente
+    contradditorio. Ma Berkeley nel suo trattato \textit{The Analyst}, pubblicato nel 1734 scrive:
+      \begin{quotation}
+        Essi non sono nè quantità finite, nè quantità infinitamente piccole e neppure nulla. Non dobbiamo forse
+        chiamarli i fantasmi di quantità defunte?
+      \end{quotation}
+      Per soddisfare le esigenze della logica, il Calcolo viene riformulato nel XIX secolo da Weierstass
+      con l'argomentazione $\epsilon - \delta$, senza infinitesimi. 
+      Ma proprio grazie ricorrendo alla logica che Robinson ha riportato di nuovo in vita l'infinitesimo.
+    \end{block}
+\end{frame}
+
+\begin{frame}[label=Robinson]
+  \frametitle{La pietra cade $s = 4,9t^2$ \cite{Davis}}
+\begin{columns}[T] % align columns
+  \begin{column}{.48\textwidth}
+    WEIERSTASS
+  \color{red}\rule{\linewidth}{4pt}
+  
+  Sia $t=1$ e $t' = 1 + \Delta t$ \\
+  $\Delta t$ è un numero reale positivo.\\
+  $s' = 4.9 + 9.8 \Delta t + 4.9(\Delta t)^2$ \\
+  \setlength{\parskip}{2em}
+
+  $\Delta s = s' - s = 9.8 \Delta t + 4.9(\Delta t)^2$ \\
+  \setlength{\parskip}{2em}
+
+  $\frac{\Delta s}{\Delta t} = 9.8 + 4.9 \Delta t$ \\
+  \setlength{\parskip}{3em}
+
+  Assegnato un qualsiasi numero reale positivo $\epsilon$, arbitrariamente piccolo, scegliamo
+  $\delta = \frac{\epsilon}{4,9}$. \\
+  \setlength{\parskip}{4em}
+  
+  Allora per tutti i $\Delta t < \delta$ \\
+  $\frac{\Delta s}{\Delta t} - 9.8 = 4.9 \Delta t < 4.9 \delta  = 4.9 \frac{\epsilon}{4.9} = \epsilon$\\
+  \setlength{\parskip}{4em}
+
+  Quindi: Velocità istantanea = $ \lim_{\Delta t \to 0} \frac{\Delta s}{\Delta t} = 9.8 $ 
+  
+  \end{column}%
+  \hfill%
+  \begin{column}{.48\textwidth}
+    ROBINSON
+  \color{blue}\rule{\linewidth}{4pt}
+  
+  Sia $t=1$ e $t' = 1 + dt$ \\
+  $dt$ è un numero positivo infinitesimo.\\
+  $s' = 4.9 + 9.8 dt + 4.9(dt)^2$ \\
+  \setlength{\parskip}{2em}
+
+  $\Delta s = s' - s = 9.8 dt + 4.9(dt)^2$ \\
+  \setlength{\parskip}{2em}
+
+  $\frac{ds}{dt} = 9.8 + 4.9 dt$ \\
+  \setlength{\parskip}{3em}
+
+  Poichè $dt$ è un infinitesimo, lo è anche $4.9dt$. 9.8 è un numero reale standard.
+  \setlength{\parskip}{4em}
+  
+    Quindi: Velocità istantanea = parte standard di $\frac{ds}{dt} = 9.8$ 
+  
+  \end{column}%
+  
+  \end{columns}
 \end{frame}
